@@ -56,7 +56,10 @@ export const Formulario = () => {
             <input
               type="text"
               placeholder="usuario"
-              onChange={(e) => setLogin(e.target.value)}
+              onChange={(e) => {
+                setLogin(e.target.value);
+                setLoginError("");
+              }}
             />
           </div>
           <div className="input">
@@ -64,10 +67,13 @@ export const Formulario = () => {
             <input
               type="password"
               placeholder="senha"
-              onChange={(e) => setSenha(e.target.value)}
+              onChange={(e) => {
+                setSenha(e.target.value);
+                setLoginError("");
+              }}
             />
           </div>
-          {loginError && <p style={{ color: "red" }}>{loginError}</p>}
+          {loginError && <p className="erro-senha">{loginError}</p>}
           <div className="entrar" onClick={log}>
             ENTRAR
           </div>
