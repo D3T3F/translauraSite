@@ -3,47 +3,50 @@
   flex-direction: column;
   align-items: center;
   width: 50rem;
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   border-radius: 8px;
-
-  box-shadow: 2px 4px 12px 2px rgb(238, 238, 238);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff; 
 }
 
 .table-title {
   color: rgb(167, 235, 184);
   font-size: 40px;
   font-weight: 700;
+  margin-top: 20px;
 }
 
 .tabela {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-
-  margin-top: 30px;
-  width: 800px;
+  margin-top: 20px;
 }
 
-.tabela table,
-th,
-td {
-  border: 1px solid black;
-  border-radius: 2px;
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.colunas th {
-  align-items: center;
+.tabela th,
+.tabela td {
+  border: none; 
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
 }
 
 .colunas .nome {
   width: 40%;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .linhas {
-  text-align: center;
+  margin-top: 10px;
 }
 
 .linhas .nome {

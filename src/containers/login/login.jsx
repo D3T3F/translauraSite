@@ -6,8 +6,9 @@ import userImg from "../../assets/imagens/icons/user-solid.svg";
 import padlock from "../../assets/imagens/icons/lock-svgrepo-com.svg";
 
 export const Formulario = () => {
-  const [login, setLogin] = useState();
-  const [senha, setSenha] = useState();
+  const [login, setLogin] = useState("");
+  const [senha, setSenha] = useState("");
+  const [loginError, setLoginError] = useState("");
 
   const navigate = useNavigate();
 
@@ -15,7 +16,7 @@ export const Formulario = () => {
     if (localStorage.getItem("user-info")) {
       navigate("/clientes");
     }
-  });
+  }, [navigate]);
 
   async function log() {
     const item = { login, senha };
@@ -40,6 +41,7 @@ export const Formulario = () => {
       navigate("/clientes");
     } catch (error) {
       console.log("Erro durante a requisição:", error.message);
+      setLoginError("Usuário ou senha incorretos");
     }
   }
 
@@ -65,6 +67,7 @@ export const Formulario = () => {
               onChange={(e) => setSenha(e.target.value)}
             />
           </div>
+          {loginError && <p style={{ color: "red" }}>{loginError}</p>}
           <div className="entrar" onClick={log}>
             ENTRAR
           </div>
