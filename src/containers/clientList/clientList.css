@@ -1,0 +1,51 @@
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 8px;
+
+  box-shadow: 2px 4px 12px 2px rgb(238, 238, 238);
+}
+
+.table-title {
+  color: rgb(167, 235, 184);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.tabela {
+  align-items: center;
+
+  margin-top: 30px;
+  width: 800px;
+}
+
+.tabela table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.colunas th {
+  align-items: center;
+}
+
+.colunas .nome {
+  width: 40%;
+}
+
+.linhas {
+  text-align: center;
+}
+
+.linhas .nome {
+  text-align: left;
+  padding-left: 10px;
+}

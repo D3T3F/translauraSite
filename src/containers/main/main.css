@@ -1,0 +1,97 @@
+.banner {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.container-divisor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 12px;
+  width: 100%;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px 0px 14px 6px rgb(238, 238, 238);
+  border-radius: 4px;
+  margin: 12px 0px;
+}
+
+.servicos-detalhes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 12px 0px;
+  gap: 16px;
+  padding: 12px;
+}
+
+.servico-detalhe {
+  width: 95%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo-servico-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(167, 235, 184);
+  width: max-content;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.logo-servico {
+  height: 60px;
+  width: 60px;
+}
+
+.texto-servico {
+  text-align: justify;
+}
+
+.galeria {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  object-fit: contain;
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer {
+  padding: 12px 0px;
+  margin-top: 24px;
+  box-shadow: 0px 0px 16px 8px rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer img {
+  height: 40px;
+}
