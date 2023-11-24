@@ -25,12 +25,11 @@
 
 .tabela {
   overflow: auto;
-  max-height: 75%;
+  max-height: calc(100vh - 400px);
 }
 
 .tabela table {
   align-items: center;
-
   width: 800px;
 }
 

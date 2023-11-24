@@ -31,9 +31,7 @@ export const Formulario = () => {
         body: JSON.stringify(item),
       });
 
-      if (!result.ok) {
-        throw new Error(result.status);
-      }
+      if (!result.ok) throw new Error(result.status);
 
       result = await result.text();
       localStorage.setItem("user-info", JSON.stringify(result));
