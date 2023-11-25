@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-To startte the project you will need to install [Node.js](https://nodejs.org/en).
+To start the project you will need to install [Node.js](https://nodejs.org/en).
 
 ## Available Scripts
 
