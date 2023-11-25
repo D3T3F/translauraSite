@@ -60,15 +60,14 @@ export const ClientList = () => {
     setClientes(clientes.filter((cliente) => cliente.id !== id));
   };
 
-  if(localStorage.getItem("user-info"))
-  {
+  if (localStorage.getItem("user-info")) {
     return (
       <Navbar>
         <div className="area">
-        <div className="table-title">CLIENTES</div>
+          <div className="table-title">CLIENTES</div>
           <div className="tabela">
             <table className="tabela" cellSpacing="0">
-            <thead className="colunas">
+              <thead className="colunas">
                 <tr>
                   <th className="lixeira"></th>
                   <th className="nome">Nome</th>
@@ -78,26 +77,26 @@ export const ClientList = () => {
                 </tr>
               </thead>
               <tbody className="linhas">
-                {
-                  clientes.map((cliente) => {
-                    return (
-                      <Linha
-                        key={cliente.id}
-                        cliente={cliente}
-                        onDeleteCliente={handleDeleteCliente}
-                      />
-                    );
-                  })
-                }
+                {clientes.map((cliente) => {
+                  return (
+                    <Linha
+                      key={cliente.id}
+                      cliente={cliente}
+                      onDeleteCliente={handleDeleteCliente}
+                    />
+                  );
+                })}
               </tbody>
             </table>
           </div>
-          <div className="botoes">
-            <div className="btn novo" onClick={() => window.location.href="/addCliente"}>NOVO</div>
+          <div
+            className="btn novo"
+            onClick={() => (window.location.href = "/clientes/add")}
+          >
+            NOVO
           </div>
         </div>
       </Navbar>
     );
-  }
-  else window.location.href = "/login";
+  } else window.location.href = "/login";
 };

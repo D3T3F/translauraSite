@@ -72,15 +72,6 @@ th.lixeira,
   opacity: 1;
 }
 
-.botoes {
-  margin-top: 25px;
-
-  width: 30rem;
-  display: flex;
-
-  justify-content: space-between;
-}
-
 .btn {
   background-color: rgb(167, 235, 184);
   text-align: center;
@@ -89,6 +80,7 @@ th.lixeira,
   width: fit-content;
   padding: 5px 14px 5px 14px;
   border-radius: 5px;
+  margin-top: 30px;
 
   cursor: pointer;
 }
