@@ -36,8 +36,8 @@
 }
 
 .botao-div:hover {
-  box-shadow: 0px 4px 18px 2px rgba(167, 235, 184, 0.3);
-  background-color: rgba(167, 235, 184, 0.2);
+  box-shadow: 0px 4px 18px 2px var(--verdeco);
+  background-color: var(--verdeco);
 
   font-size: 17px;
 }

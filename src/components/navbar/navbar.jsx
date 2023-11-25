@@ -35,6 +35,22 @@ const BotaoSair = () => {
   );
 };
 
+const BotaoVoltar = () => {
+  return (
+    <div className="botao-div">
+      <div
+        className="botao"
+        onClick={() => {
+          window.location.href = "/clientes";
+        }}
+      >
+        voltar
+      </div>
+      <div className="botao-underline"></div>
+    </div>
+  );
+};
+
 export const Navbar = (props) => {
   return (
     <div className="container-geral">
@@ -49,6 +65,7 @@ export const Navbar = (props) => {
         />
         {window.location.pathname === "/" ? <BotaoLogin /> : ""}
         {window.location.pathname === "/clientes" ? <BotaoSair /> : ""}
+        {window.location.pathname === "/clientes/add" ? <BotaoVoltar /> : ""}
       </div>
 
       <div className="container-resto">{props.children}</div>

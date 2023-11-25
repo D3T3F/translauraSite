@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50rem;
+  width: 55rem;
+  height: 48rem;
 
   position: absolute;
   top: 50%;
@@ -11,26 +12,32 @@
 
   border-radius: 8px;
 
-  box-shadow: 2px 4px 12px 2px rgb(238, 238, 238);
+  box-shadow: 2px 4px 20px 2px rgb(238, 238, 238);
 }
 
 .table-title {
   color: rgb(167, 235, 184);
   font-size: 40px;
   font-weight: 700;
+
+  margin-bottom: 30px;
 }
 
 .tabela {
-  align-items: center;
+  overflow: auto;
+  max-height: calc(100vh - 400px);
+}
 
-  margin-top: 30px;
+.tabela table {
+  align-items: center;
   width: 800px;
 }
 
-.tabela table,
-th,
+.tabela th,
 td {
-  border: 1px solid black;
+  background-color: var(--verdeco);
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .colunas th {
@@ -48,4 +55,36 @@ td {
 .linhas .nome {
   text-align: left;
   padding-left: 10px;
+}
+
+th.lixeira,
+.lixeira {
+  background-color: transparent;
+}
+
+.lixeira img {
+  cursor: pointer;
+  width: 20px;
+  opacity: 0;
+}
+
+.lixeira img:hover {
+  opacity: 1;
+}
+
+.btn {
+  background-color: rgb(167, 235, 184);
+  text-align: center;
+  align-items: center;
+
+  width: fit-content;
+  padding: 5px 14px 5px 14px;
+  border-radius: 5px;
+  margin-top: 30px;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-size: 17px;
 }

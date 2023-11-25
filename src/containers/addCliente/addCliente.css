@@ -1,0 +1,61 @@
+.formadd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 8px;
+
+  box-shadow: 2px 4px 12px 2px rgb(238, 238, 238);
+}
+
+.formadd form {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nome {
+  width: 550px;
+}
+
+.cep {
+  width: 220px;
+}
+
+.nome input {
+  width: 430px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add {
+  width: 140px;
+}
+
+.btns-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 90px;
+  width: 60%;
+}
