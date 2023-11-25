@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install react`
+
+The most important dependence of this project.
+
 ### `npm install react-router`
 
 You will need react-router installed to start the application.
