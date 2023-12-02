@@ -31,6 +31,7 @@ export const AddCliente = () => {
         if (!result.ok) throw new Error(result.status);
 
         setMensagem("Cliente adicionado com sucesso!");
+        document.getElementById("add").reset();
       } catch (error) {
         console.log("Erro durante a requisição:", error.message);
         setMensagem("Falha ao inserir cliente!");
